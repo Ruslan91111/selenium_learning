@@ -15,6 +15,12 @@ driver = webdriver.Chrome(service=s)             # создаём экземпл
 try:                        # в try будем писать запросы
     driver.get(url=url)
     time.sleep(5)
+    # driver.refresh()       # Обноваляет окно браузера.
+    # driver.get(url=url)
+    # time.sleep(5)
+    # driver.get_screenshot_as_file("1.png")    # сделать скриншот окна браузера
+    # driver.save_screenshot("2.png")
+
 except Exception as ex:    # перехватывать исключения
     print(ex)
 finally:
