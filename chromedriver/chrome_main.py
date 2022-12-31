@@ -37,7 +37,7 @@ proxy_options = {                                               # seleniumwire �
 }
 
 # путь к файлу драйвера
-s = Service("/chromedriver/chromedriver.exe")
+s = Service("chromedriver.exe")
 # driver = webdriver.Chrome(service=s, options=options)             # создаём экземпляр класса Webdriver
                                                                  # переменная driver - условный браузер, который мы будем настраивать и
                                                                  # передавать команды
