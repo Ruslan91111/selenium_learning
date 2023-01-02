@@ -1,0 +1,17 @@
+
+browser.get(url)
+    email_input = browser.find_element(By.ID,'index_email')
+    email_input.clear()
+    email_input.send_keys('СВОЙ ЛОГИН!')
+
+    time.sleep(3)
+    button_in = browser.find_element(By.CSS_SELECTOR,'[class="FlatButton FlatButton--primary FlatButton--size-l FlatButton--wide VkIdForm__button VkIdForm__signInButton"]')
+    button_in.click()
+    time.sleep(5)
+    pass_in  = browser.find_element(By.NAME,'password')
+    pass_in.clear()
+    pass_in.send_keys('СВОЙ ПАРОЛЬ!!!')
+    time.sleep(2)
+    button_pass = browser.find_element(By.CSS_SELECTOR,'[class="vkuiButton vkuiButton--sz-l vkuiButton--lvl-primary vkuiButton--clr-accent vkuiButton--aln-center vkuiButton--sizeY-compact vkuiButton--stretched vkuiTappable vkuiTappable--sizeX-regular vkuiTappable--hasHover vkuiTappable--hasActive vkuiTappable--mouse"]')
+    button_pass.click()
+    time.sleep(20)
